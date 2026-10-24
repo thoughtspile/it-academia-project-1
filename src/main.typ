@@ -26,9 +26,9 @@
 #outline(title: [Содержание], depth: 3)
 #pagebreak()
 
-#include "sections/introduction.typ"
-#include "sections/methodology.typ"
-#include "sections/results.typ"
-#include "sections/conclusion.typ"
+#include "sections/01-introduction.typ"
+#include "sections/02-methodology.typ"
+#include "sections/03-results.typ"
+#include "sections/04-conclusion.typ"
 
 #bibliography("references.bib")
