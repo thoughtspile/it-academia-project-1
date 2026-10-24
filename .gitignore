@@ -1,0 +1,5 @@
+# Generated PDFs
+output/
+
+# OS and editor noise
+.DS_Store
