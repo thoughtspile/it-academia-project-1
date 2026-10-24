@@ -13,6 +13,7 @@
 #set heading(numbering: "1.1.1.")
 #show heading: set align(center)
 #show heading: set text(font: "PT Serif", size: 15pt)
+#show heading: set block(below: 1.2em)
 #set cite(style: "gost-r-705-2008-numeric")
 #set bibliography(style: "gost-r-705-2008-numeric", title: [Список литературы])
 #set table(stroke: 0.5pt, inset: 6pt)
