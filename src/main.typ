@@ -8,11 +8,12 @@
   margin: (top: 20mm, bottom: 20mm, left: 30mm, right: 10mm),
   numbering: "1",
 )
-#set text(font: "Arial", size: 13pt, lang: "ru", region: "RU")
+#set text(font: "PT Sans", size: 13pt, lang: "ru", region: "RU")
 #set par(justify: true)
 #set heading(numbering: "1.1.1.")
 #show heading: set align(center)
 #show heading: set text(font: "PT Serif", size: 15pt)
+#set cite(style: "gost-r-705-2008-numeric")
 #set bibliography(style: "gost-r-705-2008-numeric")
 #set table(stroke: 0.5pt, inset: 6pt)
 #set figure(gap: 1em)
