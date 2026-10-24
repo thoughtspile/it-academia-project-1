@@ -50,7 +50,9 @@ just clean
 ```text
 .
 ├── src/
-│   └── main.typ        # Typst source and document entry point
+│   ├── main.typ        # Typst source and document entry point
+│   ├── assets/
+│   │   └── fonts/      # Locally bundled PT Sans and PT Serif fonts
 ├── output/             # Generated PDF output
 ├── justfile            # Task definitions for Just
 └── README.md
@@ -58,7 +60,11 @@ just clean
 
 ## Editing
 
-The document entry point is `src/main.typ`. Typst uses its own markup and
+The document entry point is `src/main.typ`.
+
+Fonts used by the document are bundled locally in `src/assets/fonts/` and are
+loaded explicitly with `--font-path` and `--ignore-system-fonts` for
+reproducible builds. Typst uses its own markup and
 scripting syntax. Start with the
 [Typst documentation](https://typst.app/docs/) for sections, math, tables,
 figures, references, and custom formatting.
