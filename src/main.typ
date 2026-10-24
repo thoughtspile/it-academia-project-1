@@ -14,7 +14,7 @@
 #show heading: set align(center)
 #show heading: set text(font: "PT Serif", size: 15pt)
 #set cite(style: "gost-r-705-2008-numeric")
-#set bibliography(style: "gost-r-705-2008-numeric")
+#set bibliography(style: "gost-r-705-2008-numeric", title: [Список литературы])
 #set table(stroke: 0.5pt, inset: 6pt)
 #set figure(gap: 1em)
 #set list(indent: 0.5em)
