@@ -21,14 +21,7 @@
 #set list(indent: 0.5em)
 #set enum(indent: 0.5em)
 
-#align(center)[
-  #text(font: "PT Serif", size: 16pt)[
-    Повышение эффективности интеллектуальных веб-агентов на основе гибридных архитектур с применением высокоуровневых действий
-  ]
-  #v(0.5em)
-  #text(size: 13pt)[Владимир Клепов]
-]
-#pagebreak()
+#counter(page).update(2)
 
 #outline(title: [Содержание], depth: 3)
 #pagebreak()
