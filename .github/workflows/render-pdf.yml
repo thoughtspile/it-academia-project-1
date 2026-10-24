@@ -1,0 +1,30 @@
+name: Render PDF
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  render-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v3
+        with:
+          typst-version: 0.13.1
+
+      - name: Install Just
+        uses: extractions/setup-just@v2
+
+      - name: Render PDF
+        run: just build
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: superdraft-pdf
+          path: output/superdraft.pdf
